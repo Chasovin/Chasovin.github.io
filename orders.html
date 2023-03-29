@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Laser Cutting Co.</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Laser Cut Metal :: Orders</a></h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home Page</a>
+        <p></p>
+        <a href="orders.html">Place Orders Here</a> &emsp;
+        <p></p>
+        <a href="products.html">Products List</a>
+    </nav>
+    <form name="order" method="post" id="order" action="https://webdevbasics.net/scripts/demo.php">
+        <fieldset>
+            <h2 class="uLD">Custom Design</h2>
+            <label for="usrFile">Upload your Design here: <input type="file" name="usrFile" id="usrFile"></label>
+
+            <label for="email">Enter your email:
+                <input type="email" name="email" id="email" required="required" maxlength="255">
+            </label>
+            <input type="submit" value="Submit Order">
+        </fieldset>
+        <fieldset>
+            <h2 class="uLD">Common Orders</h2>
+            <div>Order Item: </div>
+            <select id="commonOrders">
+                <option selected>&nbsp;</option>
+                <option>a0015</option>
+                <option>f3401</option>
+                <option>Garden Gnome (adult)</option>
+                <option>Garden Gnome (child)</option>
+                <option>US Flag</option>
+                <option>y0729</option>
+            </select>
+            <input type="submit" value="Submit Order">
+        </fieldset>
+        <fieldset>
+            <h2 class="uLD">Shipping information</h2>
+            <div class="ht3">Shipping Name</div>
+            <label for="fName">
+                First Name:
+                <input type="text" required maxlength="255" name="fName" id="fName"> </label>
+            <label for="lName">
+                Last Name:
+                <input type="text" required maxlength="255" name="lName" id="lName">
+            </label>
+            <div>Address
+
+                <label for="st">Street:
+                    <input type="text" name="st" id="st">
+                </label>
+
+                <label for="apptect">Appartment, unit, building, floor, ect:
+                    <input type="text" name="apptect" id="apptect">
+                </label>
+
+                <label for="city">City:
+                    <input type="text" name="city" id="city">
+                </label>
+                <label for="state">State:
+                    <input type="text" name="state" id="state">
+                </label>
+                <label for="ZIP">ZIP Code:
+                    <input type="text" name="ZIP" id="ZIP">
+                </label>
+
+
+            </div>
+            <div class="ht3">Contact Info</div>
+            <label for="e-mail">Email:
+                <input type="text" name="e-mail" id="e-mail">
+            </label>
+            <label for="pNumb">Phone Number:
+                <input type="tel" name="pNumb" id="pNumb">
+            </label>
+                
+            
+            <input type="submit" value="Submit Order">
+        </fieldset>
+    </form>
+
+
+    <footer id="products">
+        Copyright &copy; 2023 Laser Cutting Co. <br>
+        If you have any questions, email us at
+        <a href="mailto:4800630103@davistech.edu">4800630103@davistech.edu</a>
+    </footer>
+</body>
+
+</html>
